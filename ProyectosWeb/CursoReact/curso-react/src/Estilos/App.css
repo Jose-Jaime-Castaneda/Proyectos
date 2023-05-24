@@ -1,0 +1,131 @@
+.Main-div {
+  display: flex;
+  justify-content: center;
+}
+
+.CardInfo {
+  text-align: center;
+  width: 15em;
+  margin: 1em;
+  padding: 0.1em;
+  border-radius: 5%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 15px #ccc;
+  transition: transform 0.3s;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.CardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.CardInfo:hover {
+  transform: scale(1.1);
+}
+
+.MainProduct {
+  border-top: 4px dashed black;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.ProductImg {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.ProductImg > img {
+  width: 100%;
+}
+
+.ProductContainer {
+  width: 40%;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.relogImg {
+  box-sizing: border-box;
+}
+
+.relogImg > img {
+  width: 100%;
+}
+
+.relogImgProduct {
+  cursor: pointer;
+}
+
+.BlackStrap {
+  cursor: pointer;
+  border-radius: 5%;
+  border: 1px solid blue;
+}
+
+.RedStrap {
+  cursor: pointer;
+  border-radius: 5%;
+  border: 1px solid blue;
+}
+
+.BlueStrap {
+  cursor: pointer;
+  border-radius: 5%;
+  border: 1px solid blue;
+}
+
+.PurpleStrap {
+  cursor: pointer;
+  border-radius: 5%;
+  border: 1px solid blue;
+}
+
+.productBtn > :first-child {
+  margin-right: 1em;
+}
+
+.productBtn > :last-child {
+  margin-top: 1em;
+}
+
+.btnDefault {
+  border-radius: 5%;
+  padding: 0.5em 1.5em;
+  font-size: medium;
+  cursor: pointer;
+  border-width: 0;
+}
+
+.btnPressed {
+  border-radius: 5%;
+  padding: 0.5em 1.5em;
+  font-size: medium;
+  cursor: pointer;
+  border-width: 0;
+  background-color: grey;
+  color: white;
+}
+
+.btnComprar {
+  margin-top: 1em;
+  border-radius: 5%;
+  padding: 0.5em 1.5em;
+  font-size: medium;
+  cursor: pointer;
+  border-width: 0;
+  background-color: rgb(19, 95, 12);
+  color: white;
+  margin-bottom: 1em;
+}
