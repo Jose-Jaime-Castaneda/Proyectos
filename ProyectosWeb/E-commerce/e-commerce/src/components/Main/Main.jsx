@@ -13,13 +13,20 @@ const Main = () => {
         setCategorias(info);
       });
   }, []);
+  // Funciones para manejar los eventos clic de las categorias
+  // Funcion para las laptops
+  const handleLaptops = (id) => {
+    alert("id de la catogeria: " + id);
+  };
 
   return (
     <div className="AsideMain">
       <aside className="Aside">
         <h3>Categorias</h3>
         {categorias.map((e) => (
-          <p key={e.id}>{e.title}</p>
+          <p onClick={() => handleLaptops(e.id)} key={e.id}>
+            {e.title}
+          </p>
         ))}
       </aside>
       <main className="Main">

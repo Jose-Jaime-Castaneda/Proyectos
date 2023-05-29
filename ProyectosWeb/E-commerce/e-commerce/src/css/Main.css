@@ -18,11 +18,11 @@
   .Aside > p {
     font-size: 18px;
     font-weight: 500;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
   }
 
   .Aside > h3 {
     font-size: 21px;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
   }
 }
