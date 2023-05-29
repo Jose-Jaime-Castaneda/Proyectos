@@ -4,6 +4,7 @@ import "../css/APP.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Main from "./Main/Main";
+import Carrito from "./Carrito/Carrito";
 import About from "./About/About";
 import NotFound from "./Error/NotFound";
 
@@ -22,6 +23,16 @@ const App = () => {
             <>
               <Header />
               <Main />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/carrito"
+          element={
+            <>
+              <Header />
+              <Carrito />
               <Footer />
             </>
           }
