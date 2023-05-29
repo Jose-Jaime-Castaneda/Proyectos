@@ -4,25 +4,27 @@ import "../../css/Header.css";
 
 const Header = () => {
   return (
-    <nav className="NavBar">
-      <ul className="UL">
-        <Link to={"/home"}>
-          <li>Inicio</li>
-        </Link>
-        <Link>
-          <li>Link</li>
-        </Link>
-        <Link>
-          <li>Link</li>
-        </Link>
-        <Link>
-          <li>Link</li>
-        </Link>
-        <Link to={"/about"}>
-          <li>About</li>
-        </Link>
-      </ul>
-    </nav>
+    <header className="header">
+      <nav className="NavBar">
+        <ul className="UL">
+          <Link to={"/home"} className="link">
+            <li>Inicio</li>
+          </Link>
+          <Link className="link">
+            <li>Link</li>
+          </Link>
+          <Link className="link">
+            <li>Link</li>
+          </Link>
+          <Link className="link">
+            <li>Link</li>
+          </Link>
+          <Link to={"/about"} className="link">
+            <li>About</li>
+          </Link>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
