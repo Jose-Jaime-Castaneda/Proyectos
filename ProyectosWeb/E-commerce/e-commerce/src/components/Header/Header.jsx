@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <nav className="NavBar">
       <ul className="UL">
-        <Link to={"/"}>
+        <Link to={"/home"}>
           <li>Inicio</li>
         </Link>
         <Link>
@@ -18,8 +18,8 @@ const Header = () => {
         <Link>
           <li>Link</li>
         </Link>
-        <Link>
-          <li>Link</li>
+        <Link to={"/about"}>
+          <li>About</li>
         </Link>
       </ul>
     </nav>
