@@ -1,28 +1,28 @@
 {
-    "categories": [
+    "categorias": [
         {
             "id": 1,
-            "title": "Fridges"
+            "title": "Laptops"
         },
         {
             "id": 2,
-            "title": "Kettles"
+            "title": "Tenis"
         },
         {
             "id": 3,
             "title": "TV´s"
         }
     ],
-    "products": [
+    "productos": [
         {
             "id": 1,
             "catId": 1,
-            "title": "Fridges"
+            "title": "ASUS"
         },
         {
             "id": 2,
             "catId": 1,
-            "title": "Fridges"
+            "title": "HP"
         }
     ]
 }

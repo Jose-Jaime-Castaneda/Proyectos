@@ -3,21 +3,21 @@ import "../css/APP.css";
 
 const App = () => {
   // Variable para probar fetch API
-  const [aux, setAux] = useState([]);
+  const [categorias, setCategorias] = useState([]);
   // Fecth API
   useEffect(() => {
-    fetch("http://localhost:3001/categories")
+    fetch("http://localhost:3001/categorias")
       .then((reponse) => reponse.json())
       .then((info) => {
-        console.log(info);
-        setAux(info);
+        // console.log(info);
+        setCategorias(info);
       });
   }, []);
 
   return (
     <main>
       <h1>Categorias</h1>
-      {aux.map((e) => (
+      {categorias.map((e) => (
         <p key={e.id}>{e.title}</p>
       ))}
     </main>
