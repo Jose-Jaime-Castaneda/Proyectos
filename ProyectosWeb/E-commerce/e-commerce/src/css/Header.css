@@ -1,0 +1,7 @@
+.UL {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+  flex-wrap: wrap;
+}

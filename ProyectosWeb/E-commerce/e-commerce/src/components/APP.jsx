@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import "../css/APP.css";
+import Header from "./Header/Header";
 
 const App = () => {
   // Variable para probar fetch API
@@ -15,12 +17,20 @@ const App = () => {
   }, []);
 
   return (
-    <main>
-      <h1>Categorias</h1>
-      {categorias.map((e) => (
-        <p key={e.id}>{e.title}</p>
-      ))}
-    </main>
+    <div>
+      <Routes>
+        <Route path="/home" />
+      </Routes>
+      <header className="Header">
+        <Header />
+      </header>
+      <main>
+        <h1>Categorias</h1>
+        {categorias.map((e) => (
+          <p key={e.id}>{e.title}</p>
+        ))}
+      </main>
+    </div>
   );
 };
 
