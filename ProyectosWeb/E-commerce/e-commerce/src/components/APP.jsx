@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "../css/APP.css";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import Main from "./Main/Main";
 import About from "./About/About";
 import NotFound from "./Error/NotFound";
@@ -21,6 +22,7 @@ const App = () => {
             <>
               <Header />
               <Main />
+              <Footer />
             </>
           }
         />
@@ -30,6 +32,7 @@ const App = () => {
             <>
               <Header />
               <About />
+              <Footer />
             </>
           }
         />
