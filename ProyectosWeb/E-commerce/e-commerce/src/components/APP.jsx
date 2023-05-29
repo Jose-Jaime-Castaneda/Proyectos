@@ -1,26 +1,55 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "../css/APP.css";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Main from "./Main/Main";
+import Carrito from "./Carrito/Carrito";
+import About from "./About/About";
+import NotFound from "./Error/NotFound";
 
 const App = () => {
-  // Variable para probar fetch API
-  const [aux, setAux] = useState([]);
-  // Fecth API
+  const navegar = useNavigate();
   useEffect(() => {
-    fetch("http://localhost:3001/categories")
-      .then((reponse) => reponse.json())
-      .then((info) => {
-        console.log(info);
-        setAux(info);
-      });
+    navegar("/home");
   }, []);
 
   return (
-    <main>
-      <h1>Categorias</h1>
-      {aux.map((e) => (
-        <p key={e.id}>{e.title}</p>
-      ))}
-    </main>
+    <div className="MainDiv">
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <>
+              <Header />
+              <Main />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/carrito"
+          element={
+            <>
+              <Header />
+              <Carrito />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Header />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
   );
 };
 

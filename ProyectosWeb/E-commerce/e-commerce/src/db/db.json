@@ -1,28 +1,63 @@
 {
-    "categories": [
+    "categorias": [
         {
             "id": 1,
-            "title": "Fridges"
+            "title": "Laptops"
         },
         {
             "id": 2,
-            "title": "Kettles"
+            "title": "Tenis"
         },
         {
             "id": 3,
             "title": "TV´s"
         }
     ],
-    "products": [
+    "productos": [
         {
             "id": 1,
             "catId": 1,
-            "title": "Fridges"
+            "title": "ASUS"
         },
         {
             "id": 2,
             "catId": 1,
-            "title": "Fridges"
+            "title": "HP"
+        },
+        {
+            "id": 3,
+            "catId": 1,
+            "title": "DELL"
+        },
+        {
+            "id": 1,
+            "catId": 2,
+            "title": "Adidas"
+        },
+        {
+            "id": 2,
+            "catId": 2,
+            "title": "Vans"
+        },
+        {
+            "id": 3,
+            "catId": 2,
+            "title": "Nike"
+        },
+        {
+            "id": 1,
+            "catId": 3,
+            "title": "Samsung"
+        },
+        {
+            "id": 2,
+            "catId": 3,
+            "title": "Panasonic"
+        },
+        {
+            "id": 3,
+            "catId": 3,
+            "title": "Hellinger"
         }
     ]
 }

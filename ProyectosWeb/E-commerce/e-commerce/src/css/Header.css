@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  .header {
+    background: rgb(164, 164, 233);
+    padding: 0.1px;
+  }
+
+  .UL {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .UL > .link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transform: 0.1s;
+  }
+
+  .UL > .link:hover {
+    transform: scale(1.3);
+  }
+}

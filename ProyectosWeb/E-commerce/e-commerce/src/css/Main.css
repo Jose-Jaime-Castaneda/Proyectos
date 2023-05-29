@@ -1,0 +1,28 @@
+.AsideMain {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+@media screen and (max-width: 767px) {
+  .Main {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Aside {
+    width: 100%;
+    text-align: center;
+    background: lightgray;
+  }
+
+  .Aside > p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .Aside > h3 {
+    font-size: 21px;
+    letter-spacing: 0.3px;
+  }
+}
