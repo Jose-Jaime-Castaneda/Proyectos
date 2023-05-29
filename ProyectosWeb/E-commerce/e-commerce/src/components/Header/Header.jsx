@@ -11,13 +11,7 @@ const Header = () => {
             <li>Inicio</li>
           </Link>
           <Link className="link">
-            <li>Link</li>
-          </Link>
-          <Link className="link">
-            <li>Link</li>
-          </Link>
-          <Link className="link">
-            <li>Link</li>
+            <li>Carrito</li>
           </Link>
           <Link to={"/about"} className="link">
             <li>About</li>
