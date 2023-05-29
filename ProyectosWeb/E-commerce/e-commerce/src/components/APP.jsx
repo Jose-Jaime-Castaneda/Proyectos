@@ -4,6 +4,7 @@ import "../css/APP.css";
 import Header from "../components/Header/Header";
 import Main from "./Main/Main";
 import About from "./About/About";
+import NotFound from "./Error/NotFound";
 
 const App = () => {
   const navegar = useNavigate();
@@ -32,6 +33,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
