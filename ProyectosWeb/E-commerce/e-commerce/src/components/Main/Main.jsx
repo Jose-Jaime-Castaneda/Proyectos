@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../../css/Main.css"
 
 const Main = () => {
   // Variable para probar fetch API
@@ -14,12 +15,15 @@ const Main = () => {
   }, []);
 
   return (
-    <main>
-      <h1>Categorias</h1>
-      {categorias.map((e) => (
-        <p key={e.id}>{e.title}</p>
-      ))}
-    </main>
+    <div className="AsideMain">
+      <aside>
+        <h3>Categorias</h3>
+        {categorias.map((e) => (
+          <p key={e.id}>{e.title}</p>
+        ))}
+      </aside>
+      <main>Contenido Principal</main>
+    </div>
   );
 };
 
