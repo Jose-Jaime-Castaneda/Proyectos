@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="MainDiv">
       <Routes>
         <Route
           path="/home"
