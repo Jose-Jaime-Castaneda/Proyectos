@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "../../css/Main.css";
-import { fetcher } from "../../Utils";
+import { getProductos, getCategorias } from "../../Utils";
 
 const Main = () => {
-  // Variable para probar fetch API
+  // Estados para guardar la información
   const [categorias, setCategorias] = useState([]);
   const [productos, setProductos] = useState([]);
-  // Fecth API
+  // Función para obtener las categorias
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetcher("/categorias");
+      const data = await getCategorias();
       setCategorias(data);
     };
     fetchData();
   }, []);
-  // Funcion para manejar los eventos clic de las categorias
+  // Funcion para obtener los productos dependiendo
+  // de la categoria
   const handleProductos = async (id) => {
-    const fetchData = await fetcher("/productos?catId=" + id);
+    const fetchData = await getProductos(id);
     setProductos(fetchData);
   };
 
