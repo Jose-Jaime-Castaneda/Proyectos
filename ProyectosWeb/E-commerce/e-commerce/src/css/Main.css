@@ -7,12 +7,12 @@
   .Main {
     width: 100%;
     text-align: center;
+    background: #ffffff;
   }
 
   .Aside {
     width: 100%;
     text-align: center;
-    background: #e8e8e8;
   }
 
   .Aside > p {
