@@ -33,7 +33,6 @@ const Main = () => {
           ))}
       </aside>
       <main className="Main">
-        
         {productos.map((l) => (
           <>
             <article className="article" key={l.id}>
