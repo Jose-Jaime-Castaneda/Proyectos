@@ -13,7 +13,7 @@
   }
 
   .UL > .link {
-    text-decoration: none;
+    text-decoration: overline;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
