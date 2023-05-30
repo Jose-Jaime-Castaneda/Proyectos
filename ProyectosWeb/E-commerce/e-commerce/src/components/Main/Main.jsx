@@ -37,7 +37,7 @@ const Main = () => {
         {productos.map((l) => (
           <>
             <article key={l.id}>
-              <h3>{l.title}</h3>
+              <h4>{l.title}</h4>
               <img src={l.imgSrc}></img>
               <p>
                 <span>Acerca del producto: </span>

@@ -14,6 +14,12 @@
     width: 100%;
   }
 
+  .Main > article > img {
+    width: 80%;
+    object-fit: cover;
+    background-image: none;
+  }
+
   .Aside {
     width: 100%;
     text-align: center;
