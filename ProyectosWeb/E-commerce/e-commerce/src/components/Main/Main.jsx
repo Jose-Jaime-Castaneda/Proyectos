@@ -37,11 +37,14 @@ const Main = () => {
         {productos.map((l) => (
           <>
             <article key={l.id}>
-              <p>{l.title}</p>
-              <p>{l.descripcion}</p>
-              <p>{l.precio}</p>
-              <p>{l.stock}</p>
+              <h3>{l.title}</h3>
               <img src={l.imgSrc}></img>
+              <p>
+                <span>Acerca del producto: </span>
+                {l.descripcion}
+              </p>
+              <h3>Precio: ${l.precio}</h3>
+              <p>Disponibles: {l.stock}</p>
             </article>
           </>
         ))}

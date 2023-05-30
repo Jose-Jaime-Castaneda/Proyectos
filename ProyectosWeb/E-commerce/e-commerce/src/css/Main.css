@@ -10,6 +10,10 @@
     background: #ffffff;
   }
 
+  .Main > article {
+    width: 100%;
+  }
+
   .Aside {
     width: 100%;
     text-align: center;
