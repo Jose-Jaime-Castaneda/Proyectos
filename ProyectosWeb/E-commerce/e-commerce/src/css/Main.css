@@ -10,14 +10,18 @@
     background: #ffffff;
   }
 
-  .Main > article {
+  .Main > .article {
     width: 100%;
   }
 
-  .Main > article > img {
+  .Main > .article > img {
     width: 80%;
     object-fit: cover;
     background-image: none;
+  }
+
+  span {
+    font-weight: 500;
   }
 
   .Aside {

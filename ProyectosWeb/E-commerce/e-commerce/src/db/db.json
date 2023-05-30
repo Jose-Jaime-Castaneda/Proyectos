@@ -26,12 +26,20 @@
         {
             "id": 2,
             "catId": 1,
-            "title": "HP"
+            "title": "Laptop HP EliteBook 830 ,G6, pantalla FHD de 13.3 pulgadas, Intel Core i7-8665U hasta 3.8 GHz, 16 GB DDR4 RAM, 512 GB SSD, HDMI, Windows 11 Pro 64 bits (reacondicionada)",
+            "descripcion": "i7-8665U, FHD, HP EliteBook i7, HP Win 11 renovado, laptop con Windows 11 renovada.",
+            "precio": 7300,
+            "stock": 10,
+            "imgSrc": "https://m.media-amazon.com/images/I/6109W39l62L._AC_SX425_.jpg"
         },
         {
             "id": 3,
             "catId": 1,
-            "title": "DELL"
+            "title": "Laptop Dell Inspiron 3515 15.6´´ FHD, AMD Ryzen™ 3, 8GB RAM, 256GB SSD, Windows 11, Plata.",
+            "descripcion": "Laptop de 15,6 pulgadas con gama de familia de procesadores AMD Ryzen 3 3250U, diseño sustentable y reflexivo, y características clave para uso diario.",
+            "precio": 8200,
+            "stock": 8,
+            "imgSrc": "https://m.media-amazon.com/images/I/61l+1yfCkaL._AC_SX425_.jpg"
         },
         {
             "id": 1,
