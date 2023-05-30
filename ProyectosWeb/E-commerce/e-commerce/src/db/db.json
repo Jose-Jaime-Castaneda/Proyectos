@@ -17,7 +17,11 @@
         {
             "id": 1,
             "catId": 1,
-            "title": "ASUS"
+            "title": "Acer Laptop Gaming Nitro 5 Ci5 8GB/ 256 SSD + 1TB HDD GTX1650, AN515-57-520T",
+            "descripcion": "Procesador: intel core i5-11400h, hexa core, 2.70 ghz, hasta 4.50 ghz, 12 mb smartcache, 8gt/s",
+            "precio": 15000,
+            "stock": 5,
+            "imgSrc": "https://m.media-amazon.com/images/I/71R+dGPqtrL._AC_SX425_.jpg"
         },
         {
             "id": 2,
