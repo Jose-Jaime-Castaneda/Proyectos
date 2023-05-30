@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .header {
-    background: rgb(164, 164, 233);
+    background: #8a2be2;
     padding: 0.1px;
   }
 
@@ -14,13 +14,9 @@
 
   .UL > .link {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     transform: 0.1s;
-  }
-
-  .UL > .link:hover {
-    transform: scale(1.3);
   }
 }
