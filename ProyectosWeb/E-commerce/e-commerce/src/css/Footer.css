@@ -8,4 +8,11 @@
     text-align: center;
     color: #ffffff;
   }
+
+  .footer p {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: .2px;
+    font-weight: 500;
+  }
 }

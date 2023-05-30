@@ -33,7 +33,7 @@ const Main = () => {
           ))}
       </aside>
       <main className="Main">
-        <h1>Productos</h1>
+        
         {productos.map((l) => (
           <>
             <article className="article" key={l.id}>

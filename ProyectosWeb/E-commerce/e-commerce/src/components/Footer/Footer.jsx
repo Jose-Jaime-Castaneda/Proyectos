@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <h4>Soy el Footer</h4>
+      <p>Y este es mi primer proyecto en React desde 0, por mi cuenta 🤓</p>
     </footer>
   );
 };
