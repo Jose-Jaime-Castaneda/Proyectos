@@ -38,8 +38,8 @@ const Main = () => {
           <>
             <article className="article" key={l.id}>
               <h4>{l.title}</h4>
-              <h3>Precio: ${l.precio}</h3>
               <img src={l.imgSrc}></img>
+              <h3>Precio: ${l.precio}</h3>
             </article>
           </>
         ))}

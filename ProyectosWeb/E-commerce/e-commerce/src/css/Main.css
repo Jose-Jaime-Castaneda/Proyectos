@@ -20,8 +20,12 @@
     background-image: none;
   }
 
-  span {
-    font-weight: 500;
+  .article > h3 {
+    color: #1e9b26;
+  }
+
+  .article {
+    border-bottom: 1px solid #000;
   }
 
   .Aside {
