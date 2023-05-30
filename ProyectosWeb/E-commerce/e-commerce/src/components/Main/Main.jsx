@@ -15,23 +15,27 @@ const Main = () => {
     fetchData();
   }, []);
   // Funcion para manejar los eventos clic de las categorias
-  const handleProductos = (id) => {
-    fetch("/productos?catId=" + id)
-      .then((reponse) => reponse.json())
-      .then((info) => {
-        // console.log(info);
-        setProductos(info);
-      });
+  const handleProductos = async (id) => {
+    const fetchData = await fetcher("/productos?catId=" + id);
+    setProductos(fetchData);
   };
 
   return (
     <div className="AsideMain">
       <aside className="Aside">
         <h3>Categorias</h3>
-        {categorias && categorias.map((e) => <p key={e.id}>{e.title}</p>)}
+        {categorias &&
+          categorias.map((e) => (
+            <p onClick={() => handleProductos(e.id)} key={e.id}>
+              {e.title}
+            </p>
+          ))}
       </aside>
       <main className="Main">
         <h1>Productos</h1>
+        {productos.map((l) => (
+          <p key={l.id}>{l.title}</p>
+        ))}
       </main>
     </div>
   );
