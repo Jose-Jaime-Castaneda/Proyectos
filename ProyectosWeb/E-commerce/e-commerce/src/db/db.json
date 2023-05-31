@@ -42,34 +42,58 @@
             "imgSrc": "https://m.media-amazon.com/images/I/61l+1yfCkaL._AC_SX425_.jpg"
         },
         {
-            "id": 1,
+            "id": 4,
             "catId": 2,
-            "title": "Adidas"
+            "title": "Adidas Lite Racer CLN 2.0 Zapatillas para Correr para Hombre",
+            "descripcion": "Con líneas esenciales y un aspecto minimalista, estos zapatos cuentan con una parte superior de malla transpirable ligera. Acolchado extra suave que proporciona mayor comodidad",
+            "precio": 1400,
+            "stock": 10,
+            "imgSrc": "https://m.media-amazon.com/images/I/51bSEpYAVoL._AC_SY500_.jpg"
         },
         {
-            "id": 2,
+            "id": 5,
             "catId": 2,
-            "title": "Vans"
+            "title": "Vans Old Skool para Hombre",
+            "descripcion": "Las Vans Old Skool son unas zapatillas clásicas de skate que a menudo se imitan pero nunca duplicadas. Este original de California debutó la raya Vans y está disponible actualmente en una amplia gama de colores y materiales. También son extremadamente duraderos y cuentan con una suela de gofre.",
+            "precio": 950,
+            "stock": 8,
+            "imgSrc": "https://m.media-amazon.com/images/I/81H3Z8jeeiL._AC_SX500_.jpg"
         },
         {
-            "id": 3,
+            "id": 6,
             "catId": 2,
-            "title": "Nike"
+            "title": "Nike Mens Alpha Shark Football Cleats",
+            "descripcion": "La playera Nike Boombox Playa para niño (8-15 J) proporciona un aspecto llamativo y una sensación cómoda con su gráfico reflectante en algodón suave.",
+            "precio": 2600,
+            "stock": 10,
+            "imgSrc": "https://m.media-amazon.com/images/I/61ZN2EjQJ3L._AC_SY500_.jpg"
         },
         {
-            "id": 1,
+            "id": 7,
             "catId": 3,
-            "title": "Samsung"
+            "title": "Samsung 43' Class TU700D Series Crystal Ultra HD 4K Smart TV UN43TU700DFXZA (modelo 2020)",
+            "descripcion": "Este televisor inteligente desbloquea los detalles ocultos cuatro veces la calidad de Full HD. Plus Universal Guide te ayuda a encontrar exactamente lo que quieres ver, rápida y fácilmente. Procesador de cristal 4K: Este procesador ultra rápido transforma todo lo que ves en impresionante 4K. ",
+            "precio": 6500,
+            "stock": 25,
+            "imgSrc": "https://m.media-amazon.com/images/I/81GlGvcpm9L._AC_SX425_.jpg"
         },
         {
-            "id": 2,
+            "id": 8,
             "catId": 3,
-            "title": "Panasonic"
+            "title": "Hisense Pantalla 43' UHD Smart TV LED 43A6H Google TV (2022)",
+            "descripcion": "4K UHD: Resolución 4 veces mayor que los televisores Full HD; disfruta de un maratón de tus series favoritas, encuentra los últimos estrenos o sumérgete en cada momento de tu juego favorito",
+            "precio": 5300,
+            "stock": 20,
+            "imgSrc": " https://m.media-amazon.com/images/I/61MdEr8tA3L.__AC_SX300_SY300_QL70_ML2_.jpg"
         },
         {
-            "id": 3,
+            "id": 9,
             "catId": 3,
-            "title": "Hellinger"
+            "title": "SANSUI Android TV Google Assistant, Control de Voz (40' WiFi HD)",
+            "descripcion": "Android tv, asistente de google integrado; android tv cuenta con más de 400,000 contenidos que disfrutarás en la pantalla más grande de tu hogar; disfruta o descubre nuevas películas, series, música y videojuegos; el asistente de google * está integrado en android tv, así que dile a tu tv que encienda las luces, ajuste la temperatura, agregue un artículo a tu carrito de compras; y gracias a la búsqueda universal, nunca ha sido tan fácil obtener recomendaciones",
+            "precio": 3300,
+            "stock": 15,
+            "imgSrc": "https://m.media-amazon.com/images/I/512c1d-FtaL.__AC_SX300_SY300_QL70_ML2_.jpg"
         }
     ]
 }
