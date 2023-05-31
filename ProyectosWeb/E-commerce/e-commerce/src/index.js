@@ -45,7 +45,7 @@ root.render(
             </>
           }
         />
-        <Route path="/producto/:productoID" element={<ProdutosInfo />} />
+        <Route path="/productos/:productoID" element={<ProdutosInfo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

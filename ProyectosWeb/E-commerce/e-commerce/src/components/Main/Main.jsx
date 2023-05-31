@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../css/Main.css";
 import { getProductos, getCategorias } from "../../Utils";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   // Estados para guardar la información
@@ -36,7 +37,7 @@ const Main = () => {
         {productos.map((l) => (
           <>
             <article className="article" key={l.id}>
-              <h4>{l.title}</h4>
+              <Link to={`/productos/${l.id}`}>{l.title}</Link>
               <img src={l.imgSrc}></img>
               <h3>Precio: ${l.precio}</h3>
             </article>
