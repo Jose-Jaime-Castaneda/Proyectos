@@ -18,6 +18,11 @@
     width: 80%;
     object-fit: cover;
     background-image: none;
+    margin-top: 10px;
+  }
+
+  .article > .link:visited {
+    color: #8a2be2;
   }
 
   .article > h3 {

@@ -37,7 +37,11 @@ const Main = () => {
         {productos.map((l) => (
           <>
             <article className="article" key={l.id}>
-              <Link to={`/productos/${l.id}`}>{l.title}</Link>
+              <h4>
+                <Link to={`/productos/${l.id}`} className="link">
+                  {l.title}
+                </Link>
+              </h4>
               <img src={l.imgSrc}></img>
               <h3>Precio: ${l.precio}</h3>
             </article>
