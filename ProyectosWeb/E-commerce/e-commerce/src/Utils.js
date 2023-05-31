@@ -14,3 +14,7 @@ export const getCategorias = () => {
 export const getProductos = (id) => {
   return fetcher("/productos?catId=" + id);
 };
+// Función que manda un producto, dependiendo de su id
+export const getProductoById = (id) => {
+  return fetcher("/productos/" + id);
+};
