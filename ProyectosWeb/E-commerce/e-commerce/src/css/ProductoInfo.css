@@ -1,0 +1,72 @@
+@media screen and (max-width: 767px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+  }
+
+  .h1,
+  .img,
+  .section > p {
+    width: 90%;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+
+  .img {
+    object-fit: cover;
+    background: transparent;
+  }
+  .section > p > span {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .section > p {
+    letter-spacing: 0.2px;
+    text-align: left;
+    margin: 5px 5px 15px 5px;
+  }
+
+  .section > .stock {
+    width: 90%;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: start;
+    margin: 5px 1px 15px 1px;
+  }
+
+  .section > .precio {
+    color: #1e9b26;
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .btnContainer > button {
+    background: #8a2be2;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 18px;
+    width: 90%;
+    border-radius: 30px;
+  }
+}
