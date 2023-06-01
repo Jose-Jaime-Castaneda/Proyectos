@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={
             <>
               <Header />
