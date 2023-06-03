@@ -1,3 +1,36 @@
 @media screen and (max-width: 767px) {
-    
+  .article {
+    background: #ffffff;
+    padding: 0.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+  }
+
+  .article > h2,
+  .article > h3 {
+    width: 90%;
+  }
+
+  .article > h2 {
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+  }
+
+  .article > h3 {
+    margin: 5px 0 20px 0;
+  }
+
+  .article > h3 > .spanPrecio {
+    color: #1e9c1e;
+    font-size: 22px;
+  }
+
+  .article > img {
+    object-fit: cover;
+    width: 90%;
+    margin-bottom: 15px;
+  }
 }

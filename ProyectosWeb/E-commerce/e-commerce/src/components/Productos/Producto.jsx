@@ -17,19 +17,21 @@ const Producto = () => {
       setProductos(data);
     };
     fetchData();
-  }, []);
+  });
 
   return (
     <section>
       {productos.map((l) => (
         <article className="article" key={l.id}>
-          <h4>
+          <h2>
             <Link to={`/productoInfo/${l.id}`} className="link">
               {l.title}
             </Link>
-          </h4>
+          </h2>
+          <h3>
+            <span className="spanPrecio">${l.precio} MXN</span>
+          </h3>
           <img src={l.imgSrc}></img>
-          <h3>Precio: ${l.precio}</h3>
         </article>
       ))}
     </section>
