@@ -49,7 +49,17 @@ root.render(
           }
         />
         <Route path="/productoInfo/:ID" element={<ProdutosInfo />} />
-        <Route path="/productosByCat/:catID" element={<Producto />} />
+        <Route
+          path="/productosByCat/:catID"
+          element={
+            <>
+              <Header />
+              <Producto />
+              <Categorias />
+              <Footer />
+            </>
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
