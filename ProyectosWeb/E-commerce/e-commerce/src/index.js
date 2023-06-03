@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import NotFound from "./components/Error/NotFound";
 import ProdutosInfo from "./components/ProdcutosInfo/ProductosInfo";
 import Main from "./components/Main/Main";
+import Producto from "./components/Productos/Producto";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -45,7 +46,8 @@ root.render(
             </>
           }
         />
-        <Route path="/productos/:ID" element={<ProdutosInfo />} />
+        <Route path="/productoInfo/:ID" element={<ProdutosInfo />} />
+        <Route path="/productosByCat/:catID" element={<Producto />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

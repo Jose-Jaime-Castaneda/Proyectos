@@ -32,13 +32,14 @@ const Main = () => {
               {e.title}
             </p>
           ))}
+        <Link to={`/productosByCat/${1}`}>Producto catID1</Link>
       </aside>
       <main className="Main">
         {productos.map((l) => (
           <>
             <article className="article" key={l.id}>
               <h4>
-                <Link to={`/productos/${l.id}`} className="link">
+                <Link to={`/productoInfo/${l.id}`} className="link">
                   {l.title}
                 </Link>
               </h4>
