@@ -1,55 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../css/Main.css";
-import { getProductos, getCategorias } from "../../Utils";
-import { Link } from "react-router-dom";
 
 const Main = () => {
-  // Estados para guardar la información
-  const [categorias, setCategorias] = useState([]);
-  const [productos, setProductos] = useState([]);
-  // Función para obtener las categorias
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getCategorias();
-      setCategorias(data);
-    };
-    fetchData();
-  }, []);
-  // Funcion para obtener los productos dependiendo
-  // de la categoria
-  const handleProductos = async (id) => {
-    const fetchData = await getProductos(id);
-    setProductos(fetchData);
-  };
-
   return (
-    <div className="AsideMain">
-      <aside className="Aside">
-        <h3>Categorias</h3>
-        {categorias &&
-          categorias.map((e) => (
-            <p onClick={() => handleProductos(e.id)} key={e.id}>
-              {e.title}
-            </p>
-          ))}
-        <Link to={`/productosByCat/${1}`}>Producto catID1</Link>
-      </aside>
-      <main className="Main">
-        {productos.map((l) => (
-          <>
-            <article className="article" key={l.id}>
-              <h4>
-                <Link to={`/productoInfo/${l.id}`} className="link">
-                  {l.title}
-                </Link>
-              </h4>
-              <img src={l.imgSrc}></img>
-              <h3>Precio: ${l.precio}</h3>
-            </article>
-          </>
-        ))}
-      </main>
-    </div>
+    <main className="Main">
+      <h1>
+        ¡Aprovecha nuestros precios <span className="span">bajos</span> y
+        productos de alta <span className="span">calidad</span>!
+      </h1>
+      <p>
+        En nuestra tienda online, encontrarás los mejores productos y al mejor
+        precios en todo el mercado.
+      </p>
+    </main>
   );
 };
 

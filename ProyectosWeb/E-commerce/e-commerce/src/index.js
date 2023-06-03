@@ -22,6 +22,7 @@ root.render(
           element={
             <>
               <Header />
+              <Main />
               <Categorias />
               <Footer />
             </>
