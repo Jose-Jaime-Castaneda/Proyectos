@@ -48,7 +48,15 @@ root.render(
             </>
           }
         />
-        <Route path="/productoInfo/:ID" element={<ProdutosInfo />} />
+        <Route
+          path="/productoInfo/:ID"
+          element={
+            <>
+              <ProdutosInfo />
+              <Footer />
+            </>
+          }
+        />
         <Route
           path="/productosByCat/:catID"
           element={

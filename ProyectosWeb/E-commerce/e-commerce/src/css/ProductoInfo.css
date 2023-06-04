@@ -7,14 +7,17 @@
     background: #ffffff;
   }
 
-  .h1,
+  h2,
   .img,
-  .section > p {
+  .section > p,
+  .section > .stock,
+  .section > .precio {
     width: 90%;
   }
 
-  .h1 {
-    text-align: center;
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .img {
@@ -28,24 +31,21 @@
 
   .section > p {
     letter-spacing: 0.2px;
-    text-align: left;
-    margin: 5px 5px 25px 5px;
+    margin: 5px 0 5px 0;
   }
 
   .section > .stock {
-    width: 90%;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     text-align: start;
-    margin: 5px 1px 10px 1px;
+    margin: 5px 0 20px 0;
   }
 
   .section > .precio {
-    color: #1e9b26;
-    width: 90%;
-    text-align: left;
+    color: #1e9c1e;
     font-size: 30px;
-    margin: 10px;
+    margin: 20px 0 5px 0;
+    font-weight: 500;
   }
 
   .btnContainer {
@@ -68,5 +68,12 @@
     font-size: 18px;
     width: 90%;
     border-radius: 30px;
+  }
+
+  .btnContainer > button:nth-child(2),
+  .btnContainer > button:nth-child(3){
+    background: #ffffff;
+    color: #8a2be2;
+    border-color: #8a2be2;
   }
 }

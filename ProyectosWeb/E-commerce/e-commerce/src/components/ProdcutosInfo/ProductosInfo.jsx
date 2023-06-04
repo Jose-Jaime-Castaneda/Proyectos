@@ -19,14 +19,14 @@ const ProdutosInfo = () => {
 
   return (
     <section className="section">
-      <h3 className="h1">{producto.title}</h3>
+      <h2 className="h1">{producto.title}</h2>
       <img className="img" src={producto.imgSrc} />
-      <p className="precio">${producto.precio}</p>
-      <p className="stock">Disponibles: {producto.stock}</p>
+      <p className="precio">${producto.precio} MXN</p>
       <p>
         <span>Descripción: </span>
         {producto.descripcion}
       </p>
+      <p className="stock">Disponibles: {producto.stock}</p>
       <div className="btnContainer">
         <button>Comprar ahora</button>
         <button>Agregar al carrito</button>
