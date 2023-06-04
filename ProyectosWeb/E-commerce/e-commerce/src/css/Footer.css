@@ -4,15 +4,19 @@
     padding: 0.1px;
   }
 
-  .footer h4 {
+  .footer > h4,
+  .footer > p {
     text-align: center;
     color: #ffffff;
   }
 
+  .footer h4 {
+    margin: 10px 0 10px 0;
+  }
+
   .footer p {
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: .2px;
+    margin: 5px 0 15px 0;
+    letter-spacing: 0.2px;
     font-weight: 500;
   }
 }
