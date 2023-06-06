@@ -1,5 +1,4 @@
 export const CartReducer = (estado, accion) => {
-  debugger;
   let index = -1;
 
   if (accion.infoProd)
