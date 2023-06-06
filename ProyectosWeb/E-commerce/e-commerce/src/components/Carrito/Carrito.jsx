@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "../../css/Carrito.css";
 import { context } from "../Context/cartContext";
 
@@ -17,11 +18,16 @@ const Carrito = () => {
       ));
     } else {
       return (
-        <article>
-          <p className="carroVacio">El carrito esta actualmente vacio</p>
+        <article className="articleCarritoVacio">
+          <p className="carroVacio">¡El carrito esta vacio!</p>
           <p className="invitacion">
             Agrega productos a tu carrito para poder verlos aquí
           </p>
+          <button>
+            <Link className="link" to={"/"}>
+              Descubrir productos
+            </Link>
+          </button>
         </article>
       );
     }

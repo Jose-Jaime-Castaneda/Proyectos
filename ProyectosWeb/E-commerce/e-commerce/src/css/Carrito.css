@@ -1,3 +1,43 @@
 @media screen and (max-width: 767px) {
-    
+  .sectionCarrito {
+    padding: 0.1px;
+    background: #ffffff;
+  }
+
+  .articleCarritoVacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articleCarritoVacio > p:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin: 20px 0 5px 0;
+  }
+
+  .articleCarritoVacio > p:nth-child(2) {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0 20px 0;
+  }
+
+  .articleCarritoVacio > button {
+    background: #8a2be2;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 18px;
+    width: 90%;
+    border-radius: 30px;
+    margin: 10px 0 20px 0;
+  }
+
+  .articleCarritoVacio > button > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
