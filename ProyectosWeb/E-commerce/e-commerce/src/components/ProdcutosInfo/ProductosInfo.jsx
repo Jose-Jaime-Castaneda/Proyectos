@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { getProductoById } from "../../Utils";
 import "../../css/ProductoInfo.css";
+import { context } from "../Context/cartContext";
 
 const ProdutosInfo = () => {
   // Estado para almacenar la informacion del producto
@@ -16,6 +17,10 @@ const ProdutosInfo = () => {
     };
     fetchData();
   }, []);
+  // Variable que usará el contexto del comoponente
+  // donde lo generamos
+  const contexto = useContext(context);
+  const { agregarProducto } = contexto;
 
   return (
     <section className="section">
@@ -29,7 +34,9 @@ const ProdutosInfo = () => {
       <p className="stock">Disponibles: {producto.stock}</p>
       <div className="btnContainer">
         <button>Comprar ahora</button>
-        <button>Agregar al carrito</button>
+        <button onClick={() => agregarProducto({ ...producto })}>
+          Agregar al carrito
+        </button>
         <button>Volver</button>
       </div>
     </section>
