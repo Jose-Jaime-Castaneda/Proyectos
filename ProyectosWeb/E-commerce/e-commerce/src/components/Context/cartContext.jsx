@@ -12,9 +12,29 @@ const CartContextProvider = ({ children }) => {
   const agregarProducto = (infoProd) => {
     dispatch({ type: "ADD", infoProd });
   };
+  // Función para eliminar un producto del carro
+  const eliminarProducto = (infoProd) => {
+    dispatch({ type: "REMOVE", infoProd });
+  };
+  // Función para incrementar la cantidad del producto en el carro
+  const incrementarCantidad = (infoProd) => {
+    dispatch({ type: "INCCANT", infoProd });
+  };
+  // Función para decrementar la cantidad del producto en el carro
+  const decrementarCantidad = (infoProd) => {
+    dispatch({ type: "DECCANT", infoProd });
+  };
+  // Función para limpiar el carrito
+  const limpiarCarrito = () => {
+    dispatch({ type: "CLEAR", infoProd: null });
+  };
   // Función que renderiza la información del estado actualizado
   const contextData = {
     agregarProducto,
+    eliminarProducto,
+    incrementarCantidad,
+    decrementarCantidad,
+    limpiarCarrito,
     ...state,
   };
 
