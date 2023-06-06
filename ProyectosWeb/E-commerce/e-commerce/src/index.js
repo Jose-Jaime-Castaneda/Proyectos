@@ -11,65 +11,11 @@ import ProdutosInfo from "./components/ProdcutosInfo/ProductosInfo";
 import Main from "./components/Main/Main";
 import Producto from "./components/Productos/Producto";
 import Categorias from "./components/Categorias/Categorias";
+import Navigation from "./components/Navigation/Navigation";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Main />
-              <Categorias />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/carrito"
-          element={
-            <>
-              <Header />
-              <Carrito />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <>
-              <Header />
-              <About />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/productoInfo/:ID"
-          element={
-            <>
-              <ProdutosInfo />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/productosByCat/:catID"
-          element={
-            <>
-              <Header />
-              <Producto />
-              <Categorias />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Navigation />
   </React.StrictMode>
 );
