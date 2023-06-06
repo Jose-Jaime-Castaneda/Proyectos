@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { getProductoById } from "../../Utils";
 import "../../css/ProductoInfo.css";
@@ -37,7 +38,11 @@ const ProdutosInfo = () => {
         <button onClick={() => agregarProducto({ ...producto })}>
           Agregar al carrito
         </button>
-        <button>Volver</button>
+        <button>
+          <Link className="link" to={`/productosByCat/${producto.catId}`}>
+            Volver
+          </Link>
+        </button>
       </div>
     </section>
   );

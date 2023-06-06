@@ -76,4 +76,9 @@
     color: #8a2be2;
     border-color: #8a2be2;
   }
+
+  .btnContainer > button:nth-child(3) > .link {
+    text-decoration: none;
+    color: #8a2be2;
+  }
 }
