@@ -28,6 +28,10 @@ const CartContextProvider = ({ children }) => {
   const limpiarCarrito = () => {
     dispatch({ type: "CLEAR", infoProd: null });
   };
+  // Función para retornar los productos en el carro
+  const getProductos = () => {
+    return state.cartItem;
+  };
   // Función que renderiza la información del estado actualizado
   const contextData = {
     agregarProducto,
@@ -35,6 +39,7 @@ const CartContextProvider = ({ children }) => {
     incrementarCantidad,
     decrementarCantidad,
     limpiarCarrito,
+    getProductos,
     ...state,
   };
 
