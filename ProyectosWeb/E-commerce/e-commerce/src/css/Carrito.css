@@ -40,4 +40,50 @@
     text-decoration: none;
     color: #ffffff;
   }
+
+  .mainArticle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid black;
+  }
+
+  .mainArticle > img {
+    width: 40%;
+    object-fit: cover;
+    margin: 10px 0 5px 5px;
+  }
+
+  .articleInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .articleInfo > h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    width: 100%;
+  }
+
+  .articleInfo > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+    width: 40%;
+  }
+
+  .articleInfo > button {
+    margin: 0 0 0 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #8a2be2;
+    border-color: #8a2be2;
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -12,8 +12,14 @@ const Carrito = () => {
 
     if (productos.length > 0) {
       return productos.map((p) => (
-        <article className="articleCarrito">
-          <h1>{p.title}</h1>
+        <article className="mainArticle">
+          <img src={p.imgSrc}></img>
+          <article className="articleInfo">
+            <h4>{p.title}</h4>
+            <p>Cantidad: {p.cantidad}</p>
+            <button>+</button>
+            <button>-</button>
+          </article>
         </article>
       ));
     } else {
