@@ -16,7 +16,7 @@ const Carrito = () => {
           <img src={p.imgSrc}></img>
           <article className="articleInfo">
             <h4>{p.title}</h4>
-            <p>Cantidad: {p.cantidad}</p>
+            <p>Cantidad: {p.cantidad / 2}</p>
             <button>+</button>
             <button>-</button>
           </article>
