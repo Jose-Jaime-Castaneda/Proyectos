@@ -42,7 +42,7 @@
     transition: transform 0.3s ease;
   }
 
-  .link:hover {
+  .UL > .link:hover {
     color: #1d1c1c;
     transform: scale(1.2);
   }
@@ -70,7 +70,7 @@
     transition: transform 0.3s ease;
   }
 
-  .link:hover {
+  .UL > .link:hover {
     color: #1d1c1c;
     transform: scale(1.2);
   }
