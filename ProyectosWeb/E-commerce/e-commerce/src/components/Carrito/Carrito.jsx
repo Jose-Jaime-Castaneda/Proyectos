@@ -19,6 +19,7 @@ const Carrito = () => {
             <p>Cantidad: {p.cantidad / 2}</p>
             <button>+</button>
             <button>-</button>
+            <p className="precioProd">${p.precio * (p.cantidad / 2)}</p>
           </article>
         </article>
       ));
