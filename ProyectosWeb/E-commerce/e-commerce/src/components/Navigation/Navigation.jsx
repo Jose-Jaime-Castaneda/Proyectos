@@ -9,6 +9,7 @@ import ProdutosInfo from "../ProdcutosInfo/ProductosInfo";
 import Main from "../Main/Main";
 import Producto from "../Productos/Producto";
 import Categorias from "../Categorias/Categorias";
+import ComprarCarrito from "../ComprarCarrito/comprarCarrito";
 
 const Navigation = () => {
   return (
@@ -61,6 +62,16 @@ const Navigation = () => {
               <Header />
               <Producto />
               <Categorias />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/comprarCarrito"
+          element={
+            <>
+              <Header />
+              <ComprarCarrito />
               <Footer />
             </>
           }
