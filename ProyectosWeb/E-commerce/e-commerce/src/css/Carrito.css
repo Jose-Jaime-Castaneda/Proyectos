@@ -118,6 +118,11 @@
     border-color: #8a2be2;
   }
 
+  .carritoContainer > button:nth-child(2) > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
   .carritoTotal {
     color: #1e9c1e;
     font-size: 18px;
@@ -246,6 +251,11 @@
     border-color: #8a2be2;
   }
 
+  .carritoContainer > button:nth-child(2) > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
   .carritoTotal {
     color: #1e9c1e;
     font-size: 26px;
@@ -372,6 +382,11 @@
     background: #ffffff;
     color: #8a2be2;
     border-color: #8a2be2;
+  }
+
+  .carritoContainer > button:nth-child(2) > .link {
+    text-decoration: none;
+    color: #ffffff;
   }
 
   .carritoTotal {

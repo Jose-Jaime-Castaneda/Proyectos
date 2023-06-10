@@ -79,7 +79,11 @@ const Carrito = () => {
         <button onClick={() => setProductos(limpiarCarrito())}>
           Limpiar carrito
         </button>
-        <button>Comprar carrito</button>
+        <button>
+          <Link to={"/comprarCarrito"} className="link">
+            Comprar carrito
+          </Link>
+        </button>
       </div>
       <p className="carritoTotal">Total: ${renderTotal()}</p>
     </section>
