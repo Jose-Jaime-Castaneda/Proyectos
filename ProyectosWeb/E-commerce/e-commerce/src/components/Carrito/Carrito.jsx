@@ -5,7 +5,13 @@ import { context } from "../Context/cartContext";
 
 const Carrito = () => {
   // Funcion para obtener los productos en el carrito
-  const { getProductos } = useContext(context);
+  const {
+    getProductos,
+    limpiarCarrito,
+    eliminarProducto,
+    incrementarCantidad,
+    decrementarCantidad,
+  } = useContext(context);
   // Funcion para renderizar la información del carrito
   const renderCarrito = () => {
     const productos = getProductos();
@@ -17,8 +23,9 @@ const Carrito = () => {
           <article className="articleInfo">
             <h4>{p.title}</h4>
             <p>Cantidad: {p.cantidad / 2}</p>
-            <button>+</button>
-            <button>-</button>
+            <button onClick={() => incrementarCantidad({ id: p.id })}>+</button>
+            <button onClick={() => decrementarCantidad({ id: p.id })}>-</button>
+            <button onClick={() => eliminarProducto({ id: p.id })}>x</button>
             <p className="precioProd">${p.precio * (p.cantidad / 2)}</p>
           </article>
         </article>
@@ -39,7 +46,27 @@ const Carrito = () => {
       );
     }
   };
-  return <section className="sectionCarrito">{renderCarrito()}</section>;
+
+  const renderTotal = () => {
+    const productos = getProductos();
+
+    const total = productos.reduce(
+      (total, item) => total + item.precio * item.cantidad,
+      0
+    );
+    return total / 2;
+  };
+
+  return (
+    <section className="sectionCarrito">
+      {renderCarrito()}
+      <div className="carritoContainer">
+        <button onClick={() => limpiarCarrito()}>Limpiar carrito</button>
+        <button>Comprar carrito</button>
+      </div>
+      <p className="carritoTotal">Total: ${renderTotal()}</p>
+    </section>
+  );
 };
 
 export default Carrito;

@@ -92,6 +92,38 @@
     font-size: 24px;
     font-weight: 400;
   }
+
+  .carritoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #000000;
+  }
+
+  .carritoContainer > button {
+    background: #8a2be2;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 18px;
+    width: 40%;
+    border-radius: 30px;
+    margin: 10px 0 20px 0;
+  }
+
+  .carritoContainer > button:nth-child(1) {
+    background: #ffffff;
+    color: #8a2be2;
+    border-color: #8a2be2;
+  }
+
+  .carritoTotal {
+    color: #1e9c1e;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0 5px 5px;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -188,6 +220,38 @@
     font-weight: 400;
     width: 100%;
   }
+
+  .carritoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #000000;
+  }
+
+  .carritoContainer > button {
+    background: #8a2be2;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 26px;
+    width: 40%;
+    border-radius: 30px;
+    margin: 10px 0 20px 0;
+  }
+
+  .carritoContainer > button:nth-child(1) {
+    background: #ffffff;
+    color: #8a2be2;
+    border-color: #8a2be2;
+  }
+
+  .carritoTotal {
+    color: #1e9c1e;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 5px 0 5px 5px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -239,7 +303,6 @@
     align-items: center;
     gap: 15px;
     border-bottom: 2px dotted black;
-    margin-bottom: 20px;
   }
 
   .mainArticle > img {
@@ -284,5 +347,37 @@
     font-size: 36px;
     font-weight: 400;
     width: 100%;
+  }
+
+  .carritoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #000000;
+  }
+
+  .carritoContainer > button {
+    background: #8a2be2;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 30px;
+    width: 30%;
+    border-radius: 30px;
+    margin: 10px 0 20px 0;
+  }
+
+  .carritoContainer > button:nth-child(1) {
+    background: #ffffff;
+    color: #8a2be2;
+    border-color: #8a2be2;
+  }
+
+  .carritoTotal {
+    color: #1e9c1e;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 5px 0 5px 5px;
   }
 }
