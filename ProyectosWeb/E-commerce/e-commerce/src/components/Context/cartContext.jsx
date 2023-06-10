@@ -15,18 +15,22 @@ const CartContextProvider = ({ children }) => {
   // Función para eliminar un producto del carro
   const eliminarProducto = (infoProd) => {
     dispatch({ type: "REMOVE", infoProd });
+    return state.cartItem;
   };
   // Función para incrementar la cantidad del producto en el carro
   const incrementarCantidad = (infoProd) => {
     dispatch({ type: "INCCANT", infoProd });
+    return state.cartItem;
   };
   // Función para decrementar la cantidad del producto en el carro
   const decrementarCantidad = (infoProd) => {
     dispatch({ type: "DECCANT", infoProd });
+    return state.cartItem;
   };
   // Función para limpiar el carrito
   const limpiarCarrito = () => {
     dispatch({ type: "CLEAR", infoProd: null });
+    return state.cartItem;
   };
   // Función para retornar los productos en el carro
   const getProductos = () => {
