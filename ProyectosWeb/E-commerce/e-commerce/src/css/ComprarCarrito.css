@@ -1,0 +1,190 @@
+@media screen and (max-width: 767px) {
+  .sectionComprar {
+    background: #ffffff;
+    padding: 0.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionComprar > form {
+    width: 90%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 5px 0 30px 0;
+  }
+
+  .sectionComprar > form > h5 {
+    margin: 10px 0 10px 0;
+    margin-left: 10px;
+  }
+
+  .infoUsu,
+  .direccionUsu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .infoUsu > label,
+  .direccionUsu > label {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .infoUsu > input,
+  .direccionUsu > input {
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+  }
+
+  .btnComprar {
+    margin: 15px 0 15px 10px;
+    background: #8a2be2;
+    padding: 6px 13px 6px 13px;
+    border-radius: 20px;
+    border: 0.1px solid #000;
+    font-size: 14px;
+  }
+
+  .btnComprar > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .sectionComprar {
+    background: #ffffff;
+    padding: 0.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionComprar > form {
+    width: 90%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 5px 0 30px 0;
+  }
+
+  .sectionComprar > form > h5 {
+    margin: 10px 0 10px 0;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .infoUsu,
+  .direccionUsu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .infoUsu > label,
+  .direccionUsu > label {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .infoUsu > input,
+  .direccionUsu > input {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .btnComprar {
+    margin: 15px 0 15px 10px;
+    background: #8a2be2;
+    padding: 6px 13px 6px 13px;
+    border-radius: 20px;
+    border: 0.1px solid #000;
+    font-size: 16px;
+  }
+
+  .btnComprar > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionComprar {
+    background: #ffffff;
+    padding: 0.1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionComprar > form {
+    width: 35%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 5px 0 30px 0;
+  }
+
+  .sectionComprar > form > h5 {
+    margin: 10px 0 10px 0;
+    margin-left: 10px;
+    font-size: 17px;
+  }
+
+  .infoUsu,
+  .direccionUsu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .infoUsu > label,
+  .direccionUsu > label {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+
+  .infoUsu > input,
+  .direccionUsu > input {
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .btnComprar {
+    margin: 15px 0 15px 10px;
+    background: #8a2be2;
+    padding: 6px 13px 6px 13px;
+    border-radius: 20px;
+    border: 0.1px solid #000;
+    font-size: 18px;
+  }
+
+  .btnComprar > .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
