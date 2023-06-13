@@ -24,7 +24,9 @@ const ComprarCarrito = () => {
           <input type="text" placeholder="Ingrese la calle de su domicilio" />
         </div>
         <button className="btnComprar">
-          <Link className="link">Confirmar compra</Link>
+          <Link to={"/confirmarCompra"} className="link">
+            Confirmar compra
+          </Link>
         </button>
       </form>
     </section>
