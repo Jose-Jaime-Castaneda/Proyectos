@@ -10,6 +10,7 @@ import Main from "../Main/Main";
 import Producto from "../Productos/Producto";
 import Categorias from "../Categorias/Categorias";
 import ComprarCarrito from "../ComprarCarrito/comprarCarrito";
+import ConfirmarCompra from "../ConfirmarCompra/ConfirmarCompra";
 
 const Navigation = () => {
   return (
@@ -72,6 +73,16 @@ const Navigation = () => {
             <>
               <Header />
               <ComprarCarrito />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/confirmarCompra"
+          element={
+            <>
+              <Header />
+              <ConfirmarCompra />
               <Footer />
             </>
           }
