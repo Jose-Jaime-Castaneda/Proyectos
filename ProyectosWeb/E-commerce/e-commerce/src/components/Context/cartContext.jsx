@@ -2,8 +2,12 @@ import React, { createContext, useReducer } from "react";
 import { CartReducer } from "./cartReducer";
 // Constante que usaremos para crear contexto
 export const context = createContext();
+
+const storage = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 // Estado inicial del objeto cartItem
-const estadoInicial = { cartItem: [] };
+const estadoInicial = { cartItem: storage };
 // Componente que usaremos como provedor de contexto
 const CartContextProvider = ({ children }) => {
   // Estado para actualizar con el Reducer

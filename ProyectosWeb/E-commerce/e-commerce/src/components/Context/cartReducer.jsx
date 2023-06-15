@@ -5,6 +5,13 @@ export const CartReducer = (estado, accion) => {
     index = estado.cartItem.findIndex((i) => i.id === accion.infoProd.id);
   let newItems = [...estado.cartItem];
 
+  const storage = (cartItems) => {
+    localStorage.setItem(
+      "cart",
+      JSON.stringify(cartItems.length > 0 ? cartItems : [])
+    );
+  };
+
   switch (accion.type) {
     case "ADD":
     case "INCCANT":
@@ -40,5 +47,6 @@ export const CartReducer = (estado, accion) => {
     default:
   }
   estado.cartItem = newItems;
+  storage(newItems);
   return estado;
 };
