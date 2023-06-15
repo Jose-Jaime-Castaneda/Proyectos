@@ -16,6 +16,10 @@ const Header = () => {
           <Link to={"/about"} className="link">
             <li>About</li>
           </Link>
+          <div className="buscador">
+            <label>Buscar</label>
+            <input type="search" placeholder="buscar producto" />
+          </div>
         </ul>
       </nav>
     </header>
