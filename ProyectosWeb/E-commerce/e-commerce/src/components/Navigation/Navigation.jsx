@@ -11,6 +11,7 @@ import Producto from "../Productos/Producto";
 import Categorias from "../Categorias/Categorias";
 import ComprarCarrito from "../ComprarCarrito/comprarCarrito";
 import ConfirmarCompra from "../ConfirmarCompra/ConfirmarCompra";
+import Buscador from "../Buscar/Buscador";
 
 const Navigation = () => {
   return (
@@ -83,6 +84,17 @@ const Navigation = () => {
             <>
               <Header />
               <ConfirmarCompra />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/buscar"
+          element={
+            <>
+              <Header />
+              <Buscador />
+              <Categorias />
               <Footer />
             </>
           }

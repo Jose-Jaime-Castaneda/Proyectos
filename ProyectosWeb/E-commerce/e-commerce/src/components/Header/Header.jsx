@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../../css/Header.css";
 
 const Header = () => {
+  const navegador = useNavigate();
+
+  const handleChange = (text) => {
+    navegador("/buscar?b=" + text.target.value);
+  };
+
   return (
     <header className="header">
       <nav className="NavBar">
@@ -18,7 +24,11 @@ const Header = () => {
           </Link>
           <div className="buscador">
             <label>Buscar</label>
-            <input type="search" placeholder="buscar producto" />
+            <input
+              type="search"
+              placeholder="buscar producto"
+              onChange={handleChange}
+            />
           </div>
         </ul>
       </nav>
