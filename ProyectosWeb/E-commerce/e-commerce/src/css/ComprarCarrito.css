@@ -52,10 +52,6 @@
     border-radius: 20px;
     border: 0.1px solid #000;
     font-size: 14px;
-  }
-
-  .btnComprar > .link {
-    text-decoration: none;
     color: #ffffff;
   }
 }
@@ -116,12 +112,9 @@
     border-radius: 20px;
     border: 0.1px solid #000;
     font-size: 16px;
-  }
-
-  .btnComprar > .link {
-    text-decoration: none;
     color: #ffffff;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -181,10 +174,6 @@
     border-radius: 20px;
     border: 0.1px solid #000;
     font-size: 18px;
-  }
-
-  .btnComprar > .link {
-    text-decoration: none;
     color: #ffffff;
   }
 }

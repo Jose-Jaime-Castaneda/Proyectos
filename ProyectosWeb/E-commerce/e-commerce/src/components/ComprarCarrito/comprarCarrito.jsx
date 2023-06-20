@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "../../css/ComprarCarrito.css";
 
 const ComprarCarrito = () => {
@@ -11,16 +10,28 @@ const ComprarCarrito = () => {
     codigoPostal: "",
     calle: "",
   });
+
+  const handleSubmit = (ev) => {};
   return (
     <section className="sectionComprar">
       <h3>Formulario de compra</h3>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h5>Datos del usuario</h5>
         <div className="infoUsu">
           <label className="label">Nombre</label>
-          <input type="text" name="nombre" placeholder="Nombre de usuario" />
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre de usuario"
+            required
+          />
           <label>Correo</label>
-          <input type="email" name="correo" placeholder="ejem@gmail.com" />
+          <input
+            type="email"
+            name="correo"
+            placeholder="ejem@gmail.com"
+            required
+          />
         </div>
         <h5>Dirección</h5>
         <div className="direccionUsu">
@@ -29,21 +40,24 @@ const ComprarCarrito = () => {
             type="text"
             name="estadoYMunicipio"
             placeholder="Aguascalientes, Aguascalientes"
+            required
           />
           <label>Codigo postal</label>
-          <input type="text" name="codigoPostal" placeholder="#44000" />
+          <input
+            type="text"
+            name="codigoPostal"
+            placeholder="#44000"
+            required
+          />
           <label>Calle</label>
           <input
             type="text"
             name="calle"
             placeholder="Ingrese la calle de su domicilio"
+            required
           />
         </div>
-        <button className="btnComprar">
-          <Link to={"/confirmarCompra"} className="link">
-            Confirmar compra
-          </Link>
-        </button>
+        <button className="btnComprar">Confirmar compra</button>
       </form>
     </section>
   );
