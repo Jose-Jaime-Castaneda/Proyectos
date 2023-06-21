@@ -22,9 +22,11 @@ const ComprarCarrito = () => {
       };
     });
   };
+
   const handleSubmit = (ev) => {
     navegar("/confirmarCompra");
   };
+
   return (
     <section className="sectionComprar">
       <h3>Formulario de compra</h3>
