@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  color: blue;
+}
+
+.parrafo {
+  font: italic small-caps bold 15px georgia;
+}
