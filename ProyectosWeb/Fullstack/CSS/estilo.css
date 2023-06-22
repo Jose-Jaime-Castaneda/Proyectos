@@ -9,4 +9,64 @@
 
 .parrafo {
   font: italic small-caps bold 15px georgia;
+  text-indent: 1em;
+}
+
+.animacion1,
+.animacion2,
+.animacion3,
+.animacion4 {
+  width: 250px;
+  height: 150px;
+  background: red;
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+
+.animacion1 {
+  animation-name: animacion1;
+  animation-duration: 4s;
+  z-index: 40;
+}
+
+.animacion2 {
+  z-index: 30;
+}
+
+.animacion3 {
+  z-index: 20;
+}
+
+.animacion4 {
+  z-index: 10;
+}
+
+/* Animaciones */
+@keyframes animacion1 {
+  0% {
+    background: red;
+    top: 80px;
+    left: 10px;
+  }
+  25% {
+    background: blue;
+    top: 80px;
+    left: 210px;
+  }
+  50%{
+    background: purple;
+    top: 200px;
+    left: 210px;
+  }
+  75% {
+    background: yellow;
+    top: 200px;
+    left: 10px;
+  }
+  100% {
+    background: green;
+    top: 80px;
+    left: 10px;
+  }
 }
