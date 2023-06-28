@@ -6,8 +6,11 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
   </head>
+
   <body>
-    <div class="titulo"><h1>Forms</h1></div>
+    <div class="titulo">
+      <h1>Forms</h1>
+    </div>
     <div class="container">
       <form>
         <div class="form-group">
@@ -62,6 +65,41 @@
           >
         </li>
       </ul>
+    </div>
+    <div class="titulo">
+      <h1>Alerts</h1>
+    </div>
+    <div class="container">
+      <div class="alert alert-success alert-dismissable fade show" role="alert">
+        This is <strong>success</strong>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+      <div class="alert alert-success alert-dismissable fade show" role="alert">
+        <a href="#" class="alert-link">This is a alert link</a>
+      </div>
+    </div>
+    <div class="titulo">
+      <h1>Btn Group</h1>
+      <div class="container">
+        <div class="btn-group">
+          <button class="btn btn-primary">Web development</button
+          ><button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="../js/bootstrap.min.js"></script>
